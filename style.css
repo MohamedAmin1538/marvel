@@ -1,0 +1,193 @@
+:root {
+  --red: #bc3129;
+  --gray: #1d1f27;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Marvel", sans-serif;
+}
+body {
+  background-color: var(--red);
+  width: 100vw;
+  overflow-x: hidden !important;
+}
+body main {
+  margin-top: 50px;
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  align-items: center;
+  padding-top: 20px;
+}
+body main > div {
+  width: 70%;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px 0;
+  background-color: var(--gray);
+  margin: 66px auto;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px;
+  transition: transform 0.5s, background-color 0.5s;
+  position: relative;
+}
+body div span {
+  color: rgb(63, 63, 63);
+  font-size: 1rem;
+  padding: 20px;
+  text-transform: uppercase;
+  font-weight: 900;
+  transition: color 0.5s;
+  margin-top: -33px;
+}
+body div:hover span {
+  color: var(--red);
+}
+body main div:first-child span + img {
+  max-width: 50%;
+  height: auto;
+  margin: 0 auto;
+  transition: transform 0.5s;
+}
+body main div:first-child:hover span + img {
+  transform: translate(100px) scale(1.2, 1.2);
+}
+body div:hover {
+  transform: scale(1.1);
+  background-color: #13141a;
+}
+body main div:first-child img + img {
+  width: 50%;
+}
+body div p {
+  text-transform: capitalize;
+  padding: 0 10px 20px 10px;
+  text-align: center;
+  color: #999;
+}
+main div:first-child .opacity-1 {
+  position: absolute;
+  width: 200px !important;
+  height: auto;
+  left: 5px;
+  top: 60%;
+  opacity: 0;
+  visibility: 0;
+  transform: rotatey(180deg);
+  transition: opacity 0.5s, visibility 0.5s;
+}
+body div:hover .opacity-1,
+.opacity-2,
+.opacity-3 {
+  opacity: 1;
+  visibility: visible;
+}
+main > div:nth-child(2) {
+  margin-top: 40px;
+  position: relative;
+}
+body main div:nth-child(2) span + img {
+  max-width: 80%;
+  height: auto;
+  margin: 0 auto;
+  transition: transform 0.5s;
+}
+body main div:nth-child(2) img + img {
+  width: 20%;
+}
+body main div:nth-child(2):hover span + img {
+  transform: scale(1.2, 1.2);
+}
+.opacity-2 {
+  position: absolute;
+  width: 63% !important;
+  height: auto;
+  left: 32%;
+  top: -13%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s, visibility 0.5s;
+}
+body main div:nth-child(2):hover .opacity-2 {
+  visibility: visible;
+  opacity: 1;
+}
+img {
+  overflow-x: hidden;
+}
+main > div:nth-child(3) {
+  margin-top: 40px;
+  position: relative;
+}
+body main div:nth-child(3) span + img {
+  max-width: 80%;
+  height: auto;
+  margin: 0 auto;
+  transition: transform 0.5s;
+}
+body main div:nth-child(3) img + img {
+  width: 40%;
+}
+body main div:nth-child(3):hover span + img {
+  transform: scale(1.4, 1.4) translate(20px, -15px);
+}
+body main div:nth-child(3) span {
+  transition: 0.5s linear;
+}
+body main div:nth-child(3):hover span {
+  align-self: flex-start;
+  margin-top: -30px;
+}
+main > div:nth-child(4) {
+  margin-top: 40px;
+  position: relative;
+}
+body main div:nth-child(4) span + img {
+  max-width: 80%;
+  height: auto;
+  margin: 0 auto;
+  transition: transform 0.5s;
+}
+body main div:nth-child(4) img + img {
+  width: 30%;
+}
+body main div:nth-child(4):hover span + img {
+  transform: scale(1.2, 1.2) translateX(-100px);
+}
+.opacity-3 {
+  position: absolute;
+  width: 63% !important;
+  height: auto;
+  left: 36%;
+  top: 58%;
+  opacity: 0;
+  visibility: hidden;
+}
+body main div:nth-child(4):hover .opacity-3 {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity .5s .5s, visibility .5s .5s ;
+}
+.opacity-4 {
+  position: absolute;
+  width: 30% !important;
+  height: auto;
+  left: 50%;
+  top: -25%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s, visibility 0.5s , top 0.5s;
+  transform: rotate(180deg);
+}
+body main div:nth-child(4):hover .opacity-4 {
+  visibility: visible;
+  opacity: 1;
+  top: 38%;
+}
