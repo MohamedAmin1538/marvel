@@ -9,14 +9,20 @@
   font-family: "Marvel", sans-serif;
 }
 body {
-  background-color: var(--red);
+  background-color:black;
   width: 100vw;
   overflow-x: hidden !important;
+  display: flex;
+  justify-content: center;
 }
 body main {
+  background-color: var(--red);
+
   margin-top: 50px;
   position: relative;
-  width: 100%;
+  width: 470px;
+  border-radius: 15px;
+  box-shadow: var(--red) 0px 0px 30px 3px;
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
@@ -191,3 +197,4 @@ body main div:nth-child(4):hover .opacity-4 {
   opacity: 1;
   top: 38%;
 }
+
